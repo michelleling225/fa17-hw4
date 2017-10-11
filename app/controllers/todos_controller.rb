@@ -17,7 +17,8 @@ class TodosController < ApplicationController
 		@age = user.age
 		@email = user.email
 		@cat_name = cat.name
-		render 'show'
+		
+		redirect_to "/"
 	end 
 
 end 

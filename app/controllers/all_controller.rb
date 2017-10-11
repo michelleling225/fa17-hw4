@@ -4,7 +4,6 @@ class AllController < ApplicationController
 		@todos = Todo.all
 		@users = User.all
 		render "all"
-
 	end
 
 end 

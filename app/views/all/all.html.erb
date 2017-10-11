@@ -1,25 +1,25 @@
 <div>
 <h1>Your username</h1>
-<% @users.each do |user| %>
-   <%= user.username %>
-<%end %>
+  <% @users.each do |user| %>
+     <%= user.username %>
+  <%end %>
 <h1> Your age </h1>
-<% @users.each do |user| %>
-   <%= user.age %>
-<%end %>
+  <% @users.each do |user| %>
+     <%= user.age %>
+  <%end %>
 <h3>Your email</h3>
   <% @users.each do |user| %>
-   <%= user.email %>
-<%end %>
+     <%= user.email %>
+  <%end %>
 <h1> Your cats' name </h1>
   <% @cats.each do |cat| %>
    <%= cat.name %>
-<%end %>
+  <%end %>
 <h2> Your todos </h2>
   <% @todos.each do |todo| %>
-   <%= todo.tasks %>
-   <h3> Finished? </h3>
-   <%= todo.finished %>
+   <h3> Task </h3> <%= todo.tasks %> 
+   <h3> Finished: </h3> <%= todo.finished %> 
+ </br>
 <%end %>
 
 </div>

@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 get '/', to: 'all#all'
 get '/todos/new', to: 'todos#new'
 post '/todos', to: 'todos#create'
+
 end
